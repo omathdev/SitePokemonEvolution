@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo.css"> 
+<title>Projeto Java</title>
+</head>
+
+<body>
+    <div Class="ConteinerPai">
+   <div class="TituloPokemon">Ponyta Evolution</div>
+      <div class="TrocaConteiner">
+	   <img class="TrocaImg" src="pokemon1.png">
+	  </div>
+	  <button onclick="TrocaImagem('pokemon2.png'); TrocaCor('#017143')">Evolução</button>
+         </div>
+		 
+		<H4>Titulo: Evolução Pokemon<br><br>Projeto: Site Com implementação com JavaScript <br><br> Produzido Por: Matheus Simões <br> <br>Finalidade: Mostrar Minha evolução, para mim e <br><br> para recurtadores </H4>
+<script>
+   let imagem = document.querySelector(".TrocaImg")
+   let cor = document.querySelector(".TituloPokemon")
+  
+   
+     function TrocaImagem(endereco){
+	    imagem.src = endereco
+	 }
+	 
+	 function TrocaCor(corr){
+	   cor.style.color = corr
+	 }
+	
+</script>		 
+		 
+</body>
+</html>
